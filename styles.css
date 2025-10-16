@@ -432,6 +432,14 @@ body {
     background-color: var(--bg-light);
 }
 
+.wellness-project {
+    margin-bottom: 2rem;
+}
+
+.wellness-tag {
+    background-color: var(--secondary-color);
+}
+
 .wellness h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -480,6 +488,94 @@ body {
 .wellness-card ul li {
     margin-bottom: 0.5rem;
     color: var(--text-light);
+}
+
+.wellness-credentials {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+.wellness-credentials h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.credential-card {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.credential-card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.credential-card p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.credential-card ul {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.credential-card ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.wellness-integration {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.wellness-integration h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.integration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.integration-point {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.integration-point h4 {
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.integration-point p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Contact Section */
