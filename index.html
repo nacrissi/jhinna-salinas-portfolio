@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jhinna Salinas - Operations Strategist & AI-Driven Automation Specialist">
+    <title>Jhinna Salinas | Operations & Automation Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Jhinna Salinas</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#automation">Automation Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#wellness">Wellness</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Operations Strategist & AI-Driven Automation Specialist</h1>
+            <p class="subtitle">Transforming complex workflows into scalable automated systems</p>
+            <p class="tagline">104+ hours/year efficiency gains | 97% process acceleration | 90% error reduction</p>
+            <div class="cta-buttons">
+                <a href="#automation" class="btn btn-primary">View Automation Projects</a>
+                <a href="https://www.linkedin.com/in/jhinna-salinas" class="btn btn-secondary" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Results-driven operations leader who transforms complex workflows into scalable automated systems. Combining 13 years of client-centered service excellence with emerging AI/automation expertise to deliver measurable ROI across enterprise operations.</p>
+
+                <p><strong>Core Philosophy:</strong> Analyze what teams need, identify gaps, and build solutions that empower colleagues to excel at their highest-value work.</p>
+
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <h3>5</h3>
+                        <p>Production Automation Systems</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>1,600+</h3>
+                        <p>Lines of Production Code</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>104+</h3>
+                        <p>Hours Saved Annually</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>90%</h3>
+                        <p>Error Reduction Achieved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Projects Section -->
+    <section id="automation" class="projects">
+        <div class="container">
+            <h2>Featured Automation Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>1. Executive Reporting Automation System</h3>
+                    <span class="project-tag">Google Apps Script | BigQuery | Google Slides</span>
+                </div>
+                <div class="project-body">
+                    <p><strong>Challenge:</strong> Leadership team needed weekly performance insights across multiple data sources, requiring 3+ hours of manual slide deck creation every Monday.</p>
+
+                    <p><strong>Solution:</strong> Engineered automated Google Slides generation system integrated with real-time data sources.</p>
+
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Real-time data integration eliminating stale reporting</li>
+                        <li>Dynamic chart generation based on current week's performance</li>
+                        <li>Automated formatting ensuring brand consistency</li>
+                        <li>Error handling and data validation before slide creation</li>
+                        <li>Scheduled execution with email notifications</li>
+                    </ul>
+
+                    <h4>Impact:</h4>
+                    <ul class="impact-list">
+                        <li><strong>Time Savings:</strong> 3+ hours/week to under 5 minutes (97% reduction)</li>
+                        <li><strong>Accuracy:</strong> Real-time data eliminated version control issues</li>
+                        <li><strong>Stakeholder Satisfaction:</strong> Monday morning insights ready before first meeting</li>
+                        <li><strong>Scalability:</strong> Template easily adaptable for other departments</li>
+                    </ul>
+
+                    <button class="btn-expand" onclick="toggleCode('code1')">View Code Sample</button>
+                    <div id="code1" class="code-sample" style="display:none;">
+                        <pre><code>/**
+ * Main function to generate weekly executive report
+ * Pulls data from multiple sources and creates formatted slide deck
+ */
+function generateWeeklyExecutiveReport() {
+  // Initialize presentation
+  const presentation = SlidesApp.openById(TEMPLATE_PRESENTATION_ID);
+  const currentWeek = getCurrentWeekDates();
+
+  // Fetch data from BigQuery
+  const performanceData = fetchBigQueryData(currentWeek);
+  const kpiMetrics = calculateKPIs(performanceData);
+
+  // Generate slides
+  createCoverSlide(presentation, currentWeek);
+  createKPIOverviewSlide(presentation, kpiMetrics);
+  createTrendAnalysisSlide(presentation, performanceData);
+
+  // Validate and finalize
+  if (validateDataIntegrity(presentation)) {
+    sendNotificationEmail('Report generated successfully');
+  } else {
+    sendAlertEmail('Data validation failed - manual review required');
+  }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>2. Horizontal-to-Vertical Data Unpivoting System</h3>
+                    <span class="project-tag">Google Apps Script | Data Transformation</span>
+                </div>
+                <div class="project-body">
+                    <p><strong>Challenge:</strong> Quarterly sales data arrived in horizontal format requiring 1.5 days of manual restructuring before analysis could begin.</p>
+
+                    <p><strong>Solution:</strong> Built sophisticated unpivoting script that automatically transforms wide-format data into analysis-ready vertical structure.</p>
+
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Dynamic column detection (handles varying dealer counts)</li>
+                        <li>Metric categorization and labeling</li>
+                        <li>Date parsing and standardization</li>
+                        <li>Duplicate detection and handling</li>
+                        <li>Data type validation (numeric vs. text)</li>
+                    </ul>
+
+                    <h4>Impact:</h4>
+                    <ul class="impact-list">
+                        <li><strong>Time Savings:</strong> 1.5 days to 30 minutes (97% faster)</li>
+                        <li><strong>Accuracy:</strong> 100% maintained through automated validation</li>
+                        <li><strong>Consistency:</strong> Standardized format enables automated downstream analysis</li>
+                        <li><strong>Quarterly Value:</strong> 14+ hours saved per quarter per analyst</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>3. Multi-Layer Data Verification Protocol</h3>
+                    <span class="project-tag">Google Apps Script | Data Quality</span>
+                </div>
+                <div class="project-body">
+                    <p><strong>Challenge:</strong> Critical sales reporting contained frequent errors due to manual data entry across multiple systems.</p>
+
+                    <p><strong>Solution:</strong> Implemented 6-layer automated verification system combining rule-based validation with human oversight checkpoints.</p>
+
+                    <h4>Verification Layers:</h4>
+                    <ol>
+                        <li><strong>Format Validation:</strong> Data type, required fields, range checks</li>
+                        <li><strong>Business Logic:</strong> Cross-field validation (e.g., revenue = units × price)</li>
+                        <li><strong>Historical Comparison:</strong> Flag outliers vs. 30-day average</li>
+                        <li><strong>Cross-Source Matching:</strong> Verify consistency across systems</li>
+                        <li><strong>Automated Reconciliation:</strong> Sum checks, count validations</li>
+                        <li><strong>Human Review Queue:</strong> Surface anomalies for manual verification</li>
+                    </ol>
+
+                    <h4>Impact:</h4>
+                    <ul class="impact-list">
+                        <li><strong>Error Reduction:</strong> 90% fewer errors in critical reporting</li>
+                        <li><strong>Time Savings:</strong> 2+ hours/week saved on error correction</li>
+                        <li><strong>Data Trust:</strong> Stakeholders now confident in automated reports</li>
+                        <li><strong>Proactive Detection:</strong> Issues caught before reaching leadership</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>4. BigQuery-to-Sheets Real-Time Integration Pipeline</h3>
+                    <span class="project-tag">Google Apps Script | BigQuery API | Real-Time Data</span>
+                </div>
+                <div class="project-body">
+                    <p><strong>Challenge:</strong> Field management team needed real-time access to analytics data, but manual exports created delays and version control issues.</p>
+
+                    <p><strong>Solution:</strong> Built automated data pipeline connecting BigQuery to Google Sheets with scheduled refreshes and error handling.</p>
+
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Scheduled automated refreshes (configurable intervals)</li>
+                        <li>Incremental data loads (only new/changed records)</li>
+                        <li>Query parameter management for dynamic date ranges</li>
+                        <li>Error handling with automatic retry logic</li>
+                        <li>Email notifications on failure or data anomalies</li>
+                    </ul>
+
+                    <h4>Impact:</h4>
+                    <ul class="impact-list">
+                        <li><strong>Manual Work Eliminated:</strong> Zero time spent on data exports</li>
+                        <li><strong>Data Freshness:</strong> Real-time insights vs. day-old snapshots</li>
+                        <li><strong>Decision Speed:</strong> Field managers can act on current data</li>
+                        <li><strong>Accuracy:</strong> Single source of truth eliminates version conflicts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>5. Inventory Tracking & Multi-Channel Integration</h3>
+                    <span class="project-tag">Google Apps Script | API Integration | Multi-Channel</span>
+                </div>
+                <div class="project-body">
+                    <p><strong>Challenge:</strong> Sales and operations teams lacked visibility into inventory status across multiple sales channels, causing overselling issues.</p>
+
+                    <p><strong>Solution:</strong> Built real-time inventory tracking system integrated with multiple sales platforms (Shopify, Amazon, retail partners).</p>
+
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Multi-channel inventory aggregation</li>
+                        <li>Real-time stock level updates</li>
+                        <li>Automated low-stock alerts by channel</li>
+                        <li>Overselling prevention logic</li>
+                        <li>Historical inventory trend analysis</li>
+                    </ul>
+
+                    <h4>Impact:</h4>
+                    <ul class="impact-list">
+                        <li><strong>Overselling Prevention:</strong> Zero overselling incidents after implementation</li>
+                        <li><strong>Inventory Accuracy:</strong> 98%+ accuracy across all channels</li>
+                        <li><strong>Proactive Restocking:</strong> Automated alerts enable timely reorders</li>
+                        <li><strong>Cross-Functional Visibility:</strong> Single source of truth for all teams</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Impact Summary -->
+            <div class="impact-summary">
+                <h3>Measurable Impact Across All Projects</h3>
+                <table class="impact-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Before</th>
+                            <th>After</th>
+                            <th>Improvement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Executive Reporting Time</td>
+                            <td>3+ hours/week</td>
+                            <td>5 minutes</td>
+                            <td>97% reduction</td>
+                        </tr>
+                        <tr>
+                            <td>Quarterly Data Processing</td>
+                            <td>1.5 days</td>
+                            <td>30 minutes</td>
+                            <td>97% reduction</td>
+                        </tr>
+                        <tr>
+                            <td>Annual Time Savings</td>
+                            <td>—</td>
+                            <td>104+ hours/year</td>
+                            <td>Across all teams</td>
+                        </tr>
+                        <tr>
+                            <td>Data Errors</td>
+                            <td>Frequent issues</td>
+                            <td>90% reduction</td>
+                            <td>Quality improvement</td>
+                        </tr>
+                        <tr>
+                            <td>Inventory Accuracy</td>
+                            <td>~85%</td>
+                            <td>98%+</td>
+                            <td>Operational excellence</td>
+                        </tr>
+                        <tr>
+                            <td>Report Freshness</td>
+                            <td>Day-old data</td>
+                            <td>Real-time</td>
+                            <td>Decision speed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills & Expertise</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Automation & AI</h3>
+                    <ul>
+                        <li>Google Apps Script (1,600+ lines production code)</li>
+                        <li>Python</li>
+                        <li>Anthropic/OpenAI APIs</li>
+                        <li>GitHub Actions</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Tools</h3>
+                    <ul>
+                        <li>BigQuery (SQL)</li>
+                        <li>Google Sheets (Advanced)</li>
+                        <li>Excel</li>
+                        <li>NetSuite</li>
+                        <li>Rithum</li>
+                        <li>SPS Commerce</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <ul>
+                        <li>Notion (Database Design)</li>
+                        <li>Obsidian</li>
+                        <li>Salesforce</li>
+                        <li>Microsoft Suite</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <ul>
+                        <li>Operations Excellence</li>
+                        <li>Process Automation</li>
+                        <li>Cross-Functional Leadership</li>
+                        <li>Strategic Problem-Solving</li>
+                        <li>Data Analytics & Reporting</li>
+                        <li>Workflow Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="approach">
+                <h3>My Problem-Solving Approach</h3>
+                <ol class="approach-steps">
+                    <li><strong>Stakeholder Discovery:</strong> Interview users to understand pain points</li>
+                    <li><strong>Workflow Analysis:</strong> Map current process, identify bottlenecks</li>
+                    <li><strong>Solution Design:</strong> Architect scalable technical solution</li>
+                    <li><strong>Iterative Development:</strong> MVP first, then expand based on feedback</li>
+                    <li><strong>Testing & Validation:</strong> Multi-layer verification before production</li>
+                    <li><strong>Deployment & Training:</strong> User onboarding, documentation, support</li>
+                    <li><strong>Continuous Improvement:</strong> Monitor usage, gather feedback, enhance</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Section -->
+    <section id="wellness" class="wellness">
+        <div class="container">
+            <h2>Wellness & Coaching Background</h2>
+            <p>In addition to operations and automation expertise, I bring a unique holistic perspective from 7+ years in wellness coaching and client experience design.</p>
+
+            <div class="wellness-grid">
+                <div class="wellness-card">
+                    <h3>Duke Certified Health & Well-Being Coach</h3>
+                    <p>NBHWC-approved program (April 2023)</p>
+                    <p>Specialized in energy management, burnout prevention, and sustainable performance optimization.</p>
+                </div>
+
+                <div class="wellness-card">
+                    <h3>Certified Workflow Specialist</h3>
+                    <p>Asana Certification (March 2025)</p>
+                    <p>Expert in workflow design, process optimization, and team productivity systems.</p>
+                </div>
+
+                <div class="wellness-card">
+                    <h3>Client Experience Strategist</h3>
+                    <p>6 years at Sibly/Real Appeal</p>
+                    <ul>
+                        <li>Managed 150+ clients monthly for SaaS wellness platform</li>
+                        <li>Routinely exceeded all KPIs for engagement</li>
+                        <li>Contributed to R&D team for quarterly client training</li>
+                        <li>Designed internal employee wellness program</li>
+                    </ul>
+                </div>
+
+                <div class="wellness-card">
+                    <h3>How This Enhances My Operations Work</h3>
+                    <ul>
+                        <li><strong>Human-Centered Design:</strong> Solutions built for actual user needs</li>
+                        <li><strong>Energy-Aware Systems:</strong> Workflows that support sustainable performance</li>
+                        <li><strong>Client Success Focus:</strong> 13 years of consultative relationship management</li>
+                        <li><strong>Holistic Problem-Solving:</strong> Consider both technical and human factors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p class="contact-intro">I'm actively seeking roles where I can apply automation expertise to solve operational challenges at scale.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Austin, TX (open to remote)</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:Jhinna.Salinas@gmail.com">Jhinna.Salinas@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+18327048576">832-704-8576</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/jhinna-salinas" target="_blank">linkedin.com/in/jhinna-salinas</a></p>
+                </div>
+            </div>
+
+            <div class="ideal-role">
+                <h3>Ideal Role Combines:</h3>
+                <ul>
+                    <li><strong>Strategic Operations Leadership:</strong> Analyzing workflows and identifying opportunities</li>
+                    <li><strong>Technical Problem-Solving:</strong> Building automation solutions that deliver ROI</li>
+                    <li><strong>Cross-Functional Collaboration:</strong> Translating between technical and business stakeholders</li>
+                    <li><strong>Continuous Improvement:</strong> Iterating based on data and feedback</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jhinna Salinas. All code samples sanitized to protect proprietary information.</p>
+            <p>Production-grade automation engineering | Operations excellence | Human-centered design</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
