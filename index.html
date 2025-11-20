@@ -86,11 +86,11 @@
                     <ul>
                         <li><strong>Auto-Column Detection:</strong> No brittle hardcoded indices, dynamically finds columns by header names</li>
                         <li><strong>Previous Week Auto-Detection:</strong> Automatically determines date range, no manual date entry needed</li>
-                        <li><strong>Multi-Source Integration:</strong> Combines 6+ data sources (MRL, OOS, Merch Compliance, Visits, MVP, Check-Ins)</li>
+                        <li><strong>Multi-Source Integration:</strong> Combines 6+ data sources into unified presentation</li>
                         <li><strong>Dual Slide Types:</strong> Area rollup slide + 11 individual territory detail slides</li>
                         <li><strong>Vertical Pivot Support:</strong> Handles different data structures across source sheets</li>
                         <li><strong>Preview Mode:</strong> Dry-run before updating slides to verify accuracy</li>
-                        <li><strong>Smart TSM Mapping:</strong> Automatically matches TSM names to territories</li>
+                        <li><strong>Smart Rep Mapping:</strong> Automatically matches representatives to territories</li>
                         <li><strong>Visits Integration:</strong> Right-side columns show visits and events data per territory</li>
                     </ul>
 
@@ -250,46 +250,38 @@
             <!-- Project 5 -->
             <div class="project-card">
                 <div class="project-header">
-                    <h3>5. Enterprise Google Groups Management System</h3>
-                    <span class="project-tag">Google Apps Script | Admin Directory API | OAuth 2.0 | Access Management</span>
+                    <h3>5. Inventory Real-Time Visibility System</h3>
+                    <span class="project-tag">Google Apps Script | Real-Time Data | Operations Enablement</span>
                 </div>
                 <div class="project-body">
-                    <p><strong>Challenge:</strong> Managing Google Group memberships for 200+ field representatives across 10+ groups required 2-4 hours/week of manual administration with high error risk and security compliance concerns.</p>
+                    <p><strong>Challenge:</strong> Operations team lacked real-time visibility into inventory status, requiring manual tracking spreadsheets and creating delays in decision-making. Leadership was aware of the ops team's need for better automation tools.</p>
 
-                    <p><strong>Solution:</strong> Architected enterprise-grade automation system (2,171 lines) with 3-workflow design (Import → Update → Sync) enabling one-click group membership management with full audit trail.</p>
+                    <p><strong>Solution:</strong> Pioneered inventory automation system providing real-time visibility to operations team, eliminating manual tracking overhead and gaining leadership recognition.</p>
 
                     <h4>Key Features:</h4>
                     <ul>
-                        <li>Automated import from Master Resource List (MRL) with incremental updates</li>
-                        <li>Intelligent primary vs alias email distinction (solved Google API limitation)</li>
-                        <li>Membership cache strategy achieving 200x API performance improvement</li>
-                        <li>Rich confirmation dialogs preventing accidental destructive changes</li>
-                        <li>Comprehensive audit logging for compliance (all changes tracked with timestamps)</li>
-                        <li>Three-step workflow enabling review before execution</li>
+                        <li><strong>Real-Time Visibility:</strong> Operations team has live inventory status, no manual tracking needed</li>
+                        <li><strong>Robust Error Handling:</strong> Prevents silent failures with comprehensive error catching</li>
+                        <li><strong>Comprehensive Logging:</strong> Detailed logs for troubleshooting and audit trails</li>
+                        <li><strong>Workflow Integration:</strong> Designed specifically for ops team's workflow needs</li>
+                        <li><strong>Self-Service Dashboard:</strong> Ops team can check inventory independently</li>
                     </ul>
 
                     <h4>Technical Innovation:</h4>
                     <ul>
-                        <li><strong>Reverse Lookup Strategy:</strong> Built membership cache (10 API calls) vs checking each user individually (2,000+ calls)</li>
-                        <li><strong>Alias Resolution:</strong> Solved Google's Groups.list() limitation that returns all aliases - implemented Members.list() approach for accurate distinction</li>
-                        <li><strong>Incremental Sync:</strong> Only modifies changed memberships (preserves user edits, enables rollback)</li>
+                        <li><strong>Complex Script Resolution:</strong> Solved technical hiccup during implementation through debugging</li>
+                        <li><strong>Data Stream Integration:</strong> Harmonized multiple data sources into cohesive view</li>
+                        <li><strong>User-Centered Design:</strong> Built for ops team usability with detailed logging</li>
                     </ul>
 
                     <h4>Impact:</h4>
                     <ul class="impact-list">
-                        <li><strong>Time Savings:</strong> 2-4 hours/week to 5-10 minutes (95% reduction, ~180 hours/year saved)</li>
-                        <li><strong>Performance:</strong> 200x API efficiency improvement (2,000+ calls → 10 calls)</li>
-                        <li><strong>Accuracy:</strong> 100% vs ~95% manual (zero access delays, zero forgotten removals)</li>
-                        <li><strong>Security:</strong> Full audit trail, automated termination detection, compliance-ready</li>
-                        <li><strong>Scale:</strong> 200+ users, 10+ groups, 1,000+ memberships managed</li>
-                        <li><strong>Cross-Functional:</strong> Enabled HR team self-service (non-technical user UX)</li>
-                    </ul>
-
-                    <h4>System Architecture:</h4>
-                    <ul>
-                        <li><strong>Workflow 1:</strong> Import from MRL → Parse 12 tabs → Fetch group memberships → Populate master sheet</li>
-                        <li><strong>Workflow 2:</strong> Review assignments → Compare with group tabs → Preview changes → Update tabs</li>
-                        <li><strong>Workflow 3:</strong> Analyze diffs → Confirm sync → Execute API calls → Log changes</li>
+                        <li><strong>Time Savings:</strong> Eliminated manual tracking overhead (~30 hours/year estimated)</li>
+                        <li><strong>Team Impact:</strong> Operations team benefits from reduced manual work</li>
+                        <li><strong>Leadership Visibility:</strong> Work noticed and mentioned at leadership level</li>
+                        <li><strong>Career Capital:</strong> Building reputation as "the automation specialist" on the team</li>
+                        <li><strong>Decision Speed:</strong> Real-time data enables faster ops decisions</li>
+                        <li><strong>Delivered On-Time:</strong> Automation working successfully by end of day</li>
                     </ul>
                 </div>
             </div>
