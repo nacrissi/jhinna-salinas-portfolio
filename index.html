@@ -250,38 +250,42 @@
             <!-- Project 5 -->
             <div class="project-card">
                 <div class="project-header">
-                    <h3>5. Inventory Real-Time Visibility System</h3>
-                    <span class="project-tag">Google Apps Script | Real-Time Data | Operations Enablement</span>
+                    <h3>5. New Hire Onboarding Automation System</h3>
+                    <span class="project-tag">Google Apps Script | Admin Directory API | Workspace Management | HR Automation</span>
                 </div>
                 <div class="project-body">
-                    <p><strong>Challenge:</strong> Operations team lacked real-time visibility into inventory status, requiring manual tracking spreadsheets and creating delays in decision-making. Leadership was aware of the ops team's need for better automation tools.</p>
+                    <p><strong>Challenge:</strong> New hire onboarding required manual data entry across two spreadsheets, manual Google Workspace account creation, and error-prone credential tracking, consuming 2-3 hours per new hire batch.</p>
 
-                    <p><strong>Solution:</strong> Pioneered inventory automation system providing real-time visibility to operations team, eliminating manual tracking overhead and gaining leadership recognition.</p>
+                    <p><strong>Solution:</strong> Built comprehensive 2-sheet onboarding automation system (1,208 lines) with intelligent column mapping, automatic data transfer, Google Workspace account creation, and bidirectional credential sync.</p>
 
                     <h4>Key Features:</h4>
                     <ul>
-                        <li><strong>Real-Time Visibility:</strong> Operations team has live inventory status, no manual tracking needed</li>
-                        <li><strong>Robust Error Handling:</strong> Prevents silent failures with comprehensive error catching</li>
-                        <li><strong>Comprehensive Logging:</strong> Detailed logs for troubleshooting and audit trails</li>
-                        <li><strong>Workflow Integration:</strong> Designed specifically for ops team's workflow needs</li>
-                        <li><strong>Self-Service Dashboard:</strong> Ops team can check inventory independently</li>
+                        <li><strong>Automatic Data Transfer:</strong> Detects completed rows in hiring tracker and auto-transfers to master roster</li>
+                        <li><strong>Smart Column Mapping:</strong> Diagnostic tools with fuzzy matching auto-detect columns across different sheet structures</li>
+                        <li><strong>Store-Based Matching:</strong> Matches rows across sheets by store number (not name) for 100% accuracy</li>
+                        <li><strong>Email Generation:</strong> Auto-generates standardized email addresses from names (handles accents, apostrophes, multi-part names)</li>
+                        <li><strong>Workspace Account Creation:</strong> Creates Google Workspace accounts via Admin Directory API with organizational unit assignment</li>
+                        <li><strong>Bidirectional Sync:</strong> Immediately syncs credentials back to hiring tracker after account creation</li>
+                        <li><strong>Duplicate Detection:</strong> Checks both sheets and Google Workspace to prevent duplicate accounts</li>
+                        <li><strong>Batch Processing:</strong> Process all pending hires or selected rows with progress tracking</li>
                     </ul>
 
                     <h4>Technical Innovation:</h4>
                     <ul>
-                        <li><strong>Complex Script Resolution:</strong> Solved technical hiccup during implementation through debugging</li>
-                        <li><strong>Data Stream Integration:</strong> Harmonized multiple data sources into cohesive view</li>
-                        <li><strong>User-Centered Design:</strong> Built for ops team usability with detailed logging</li>
+                        <li><strong>Fuzzy Column Detection:</strong> Auto-detects columns with intelligent matching (handles variations like "G-Suite" vs "G Suite" vs "GSuite")</li>
+                        <li><strong>Store Number Matching:</strong> More reliable than name matching across sheets with different column structures</li>
+                        <li><strong>Immediate Credential Sync:</strong> Syncs back to source sheet immediately after account creation (not batch after)</li>
+                        <li><strong>Installable Triggers:</strong> Optional auto-transfer on edit for hands-free operation</li>
                     </ul>
 
                     <h4>Impact:</h4>
                     <ul class="impact-list">
-                        <li><strong>Time Savings:</strong> Eliminated manual tracking overhead (~30 hours/year estimated)</li>
-                        <li><strong>Team Impact:</strong> Operations team benefits from reduced manual work</li>
-                        <li><strong>Leadership Visibility:</strong> Work noticed and mentioned at leadership level</li>
-                        <li><strong>Career Capital:</strong> Building reputation as "the automation specialist" on the team</li>
-                        <li><strong>Decision Speed:</strong> Real-time data enables faster ops decisions</li>
-                        <li><strong>Delivered On-Time:</strong> Automation working successfully by end of day</li>
+                        <li><strong>Time Savings:</strong> 2-3 hours per batch to 10-15 minutes (90% reduction, ~80 hours/year estimated)</li>
+                        <li><strong>Code Volume:</strong> 1,208 lines of production Google Apps Script</li>
+                        <li><strong>Accuracy:</strong> 100% credential tracking, zero lost passwords, zero duplicate accounts</li>
+                        <li><strong>HR Enablement:</strong> Non-technical HR team can onboard new hires independently</li>
+                        <li><strong>Error Reduction:</strong> Eliminated manual copy-paste errors between sheets</li>
+                        <li><strong>Compliance:</strong> Standardized onboarding process with audit trail</li>
                     </ul>
                 </div>
             </div>
