@@ -27,7 +27,7 @@
         <div class="container">
             <h1>Operations Strategist &<br>AI-Driven Automation Specialist</h1>
             <p class="subtitle">Transforming complex workflows into scalable automated systems</p>
-            <p class="tagline">104+ hours/year efficiency gains | 97% process acceleration | 90% error reduction</p>
+            <p class="tagline">180+ hours/year efficiency gains | 200x performance optimization | 90% error reduction</p>
             <div class="cta-buttons">
                 <a href="#automation" class="btn btn-primary">View Automation Projects</a>
                 <a href="https://www.linkedin.com/in/jhinna/" class="btn btn-secondary" target="_blank">LinkedIn Profile</a>
@@ -46,20 +46,20 @@
 
                 <div class="highlights">
                     <div class="highlight-card">
-                        <h3>5</h3>
+                        <h3>6</h3>
                         <p>Production Automation Systems</p>
                     </div>
                     <div class="highlight-card">
-                        <h3>1,600+</h3>
+                        <h3>2,100+</h3>
                         <p>Lines of Production Code</p>
                     </div>
                     <div class="highlight-card">
-                        <h3>104+</h3>
+                        <h3>180+</h3>
                         <p>Hours Saved Annually</p>
                     </div>
                     <div class="highlight-card">
-                        <h3>90%</h3>
-                        <p>Error Reduction Achieved</p>
+                        <h3>200x</h3>
+                        <p>Performance Optimization</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
     <!-- Automation Projects Section -->
     <section id="automation" class="projects">
         <div class="container">
-            <h2>Featured Automation Projects</h2>
+            <h2>Featured Automation Projects (6 Production Systems)</h2>
 
             <!-- Project 1 -->
             <div class="project-card">
@@ -224,7 +224,54 @@ function generateWeeklyExecutiveReport() {
             <!-- Project 5 -->
             <div class="project-card">
                 <div class="project-header">
-                    <h3>5. Inventory Tracking & Multi-Channel Integration</h3>
+                    <h3>5. Enterprise Google Groups Management System</h3>
+                    <span class="project-tag">Google Apps Script | Admin Directory API | OAuth 2.0 | Access Management</span>
+                </div>
+                <div class="project-body">
+                    <p><strong>Challenge:</strong> Managing Google Group memberships for 200+ field representatives across 10+ groups required 2-4 hours/week of manual administration with high error risk and security compliance concerns.</p>
+
+                    <p><strong>Solution:</strong> Architected enterprise-grade automation system (2,171 lines) with 3-workflow design (Import → Update → Sync) enabling one-click group membership management with full audit trail.</p>
+
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Automated import from Master Resource List (MRL) with incremental updates</li>
+                        <li>Intelligent primary vs alias email distinction (solved Google API limitation)</li>
+                        <li>Membership cache strategy achieving 200x API performance improvement</li>
+                        <li>Rich confirmation dialogs preventing accidental destructive changes</li>
+                        <li>Comprehensive audit logging for compliance (all changes tracked with timestamps)</li>
+                        <li>Three-step workflow enabling review before execution</li>
+                    </ul>
+
+                    <h4>Technical Innovation:</h4>
+                    <ul>
+                        <li><strong>Reverse Lookup Strategy:</strong> Built membership cache (10 API calls) vs checking each user individually (2,000+ calls)</li>
+                        <li><strong>Alias Resolution:</strong> Solved Google's Groups.list() limitation that returns all aliases - implemented Members.list() approach for accurate distinction</li>
+                        <li><strong>Incremental Sync:</strong> Only modifies changed memberships (preserves user edits, enables rollback)</li>
+                    </ul>
+
+                    <h4>Impact:</h4>
+                    <ul class="impact-list">
+                        <li><strong>Time Savings:</strong> 2-4 hours/week to 5-10 minutes (95% reduction, ~180 hours/year saved)</li>
+                        <li><strong>Performance:</strong> 200x API efficiency improvement (2,000+ calls → 10 calls)</li>
+                        <li><strong>Accuracy:</strong> 100% vs ~95% manual (zero access delays, zero forgotten removals)</li>
+                        <li><strong>Security:</strong> Full audit trail, automated termination detection, compliance-ready</li>
+                        <li><strong>Scale:</strong> 200+ users, 10+ groups, 1,000+ memberships managed</li>
+                        <li><strong>Cross-Functional:</strong> Enabled HR team self-service (non-technical user UX)</li>
+                    </ul>
+
+                    <h4>System Architecture:</h4>
+                    <ul>
+                        <li><strong>Workflow 1:</strong> Import from MRL → Parse 12 tabs → Fetch group memberships → Populate master sheet</li>
+                        <li><strong>Workflow 2:</strong> Review assignments → Compare with group tabs → Preview changes → Update tabs</li>
+                        <li><strong>Workflow 3:</strong> Analyze diffs → Confirm sync → Execute API calls → Log changes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>6. Inventory Tracking & Multi-Channel Integration</h3>
                     <span class="project-tag">Google Apps Script | API Integration | Multi-Channel</span>
                 </div>
                 <div class="project-body">
